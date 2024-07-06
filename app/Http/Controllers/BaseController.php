@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Place;
+
 class BaseController extends Controller
 {
     /**
@@ -9,6 +11,9 @@ class BaseController extends Controller
      */
     public function index()
     {
-        return view('app.index');
+
+        return view('app.index', [
+            'places' => Place::latest()->get(),
+        ]);
     }
 }

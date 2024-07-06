@@ -23,4 +23,14 @@ class PlaceController extends Controller
     {
         return view('app.places.search');
     }
+
+    /**
+     * Book a place.
+     */
+    public function book($id)
+    {
+        return view('app.places.book', [
+            'place' => Place::findOrFail($id),
+        ]);
+    }
 }

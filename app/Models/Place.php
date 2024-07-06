@@ -49,7 +49,7 @@ class Place extends Model
     {
         return $this->belongsTo(Category::class)->withTrashed();
     }
-    
+
     /**
      * Get images.
      */
@@ -57,7 +57,7 @@ class Place extends Model
     {
         return $this->hasMany(PlaceImage::class);
     }
-    
+
     /**
      * Get the facilities for the place.
      */

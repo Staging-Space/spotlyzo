@@ -94,46 +94,48 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <div class="listing-item">
-                        <div class="listing-image bg-overlay-half-top">
-                            <img alt="place" class="img-fluid" src="{{ asset('images/place.jpg') }}">
-                            <div class="listing-quick-box">
-                                <a class="category" href="#">Test Category</a>
-                                <a class="popup popup-single" data-bs-toggle="tooltip" data-placement="top"
-                                    href="{{ asset('images/place.jpg') }}" title="Zoom">
-                                    <i class="fas fa-search-plus"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="listing-details">
-                            <div class="listing-details-inner">
-                                <div class="listing-title mb-2">
-                                    <h6>
-                                        <a href="#">Test Place</a>
-                                    </h6>
-                                    <span class="listing-price">LKR 1,000/hr</span>
-                                </div>
-                                <p class="mb-3">Remind yourself you have nowhere to go except have already been at the
-                                    bottom.</p>
-                                <div class="listing-rating-call">
-                                    <a class="listing-rating" href="#">
-                                        <i class="fas fa-user me-2"></i> Test Vendor
-                                    </a>
-                                    <a class="listing-call" href="tel:0000000000">
-                                        <i class="fas fa-phone me-2"></i> 000 0000 000
+
+                @foreach ($places as $place)
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="listing-item">
+                            <div class="listing-image bg-overlay-half-top">
+                                <img alt="place" class="img-fluid" src="{{ asset('images/place.jpg') }}">
+                                <div class="listing-quick-box">
+                                    <a class="category" href="#">{{ $place->category->title ?? 'N/A' }}</a>
+                                    <a class="popup popup-single" data-bs-toggle="tooltip" data-placement="top"
+                                        href="{{ asset('images/place.jpg') }}" title="Zoom">
+                                        <i class="fas fa-search-plus"></i>
                                     </a>
                                 </div>
                             </div>
-                            <div class="listing-bottom">
-                                <a class="listing-loaction" href="#">
-                                    <i class="fas fa-map-marker-alt"></i> Test City
-                                </a>
-                                <span class="listing-open">Available</span>
+                            <div class="listing-details">
+                                <div class="listing-details-inner">
+                                    <div class="listing-title mb-2">
+                                        <h6>
+                                            <a href="{{ route('places.book', $place->id)  }}">{{ $place->title ?? 'N/A' }}</a>
+                                        </h6>
+                                        <span class="listing-price">LKR {{ $place->price ?? 'N/A' }}/hr</span>
+                                    </div>
+                                    <p class="mb-3">{{ $place->description ?? 'N/A' }}</p>
+                                    <div class="listing-rating-call">
+                                        <a class="listing-rating" href="#">
+                                            <i class="fas fa-user me-2"></i> {{ $place->user->first_name.' '.$place->user->last_name ?? 'N/A' }}
+                                        </a>
+                                        <a class="listing-call" href="tel:0000000000">
+                                            <i class="fas fa-phone me-2"></i> {{ $place->user->phone ?? 'N/A' }}
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="listing-bottom">
+                                    <a class="listing-loaction" href="#">
+                                        <i class="fas fa-map-marker-alt"></i> {{ $place->address ?? 'N/A' }}
+                                    </a>
+                                    <span class="listing-open">Available</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>

@@ -31,6 +31,7 @@ Route::middleware('web')->group(function () {
         Route::resource('/about', AboutController::class)->only(['index']);
         Route::resource('/categories', CategoryController::class)->only(['index', 'show'])->scoped(['category' => 'slug']);
         Route::resource('/places', PlaceController::class)->only(['show'])->scoped(['place' => 'slug']);
+        Route::get('/places/book/{id}', [PlaceController::class, 'book'])->name('places.book');
         Route::get('/places/search', [PlaceController::class, 'search'])->name('places.search');
         Route::resource('/contact', ContactController::class)->only(['index']);
         Route::post('/contact/mail', [ContactController::class, 'mail'])->name('contact.mail');
