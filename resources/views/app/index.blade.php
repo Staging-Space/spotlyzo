@@ -5,12 +5,14 @@
 
 @extends('components.layouts.base')
 @section('content')
-    <section class="banner banner-01 bg-holder bg-overlay-black-80" style="background-image: url({{ asset('images/hero.jpg') }});">
+    <section class="banner banner-01 bg-holder bg-overlay-black-80"
+        style="background-image: url({{ asset('images/hero.jpg') }});">
         <div class="container">
             <div class="row justify-content-center position-relative">
                 <div class="col-lg-10 text-center">
                     <h1 class="mb-3 text-white">Secret Places In The City</h1>
-                    <p class="banner-sub-title mb-5 text-white">Find the best places to visit, hotel, spa, cafe, and many more from local experts.</p>
+                    <p class="banner-sub-title mb-5 text-white">Find the best places to visit, hotel, spa, cafe, and many
+                        more from local experts.</p>
                 </div>
             </div>
             <div class="row justify-content-center">
@@ -21,13 +23,15 @@
                         <div class="state-search">
                             <div class="form-group mb-lg-0 mb-3">
                                 <span>What?</span>
-                                <input class="form-control" maxlength="255" name="keyword" placeholder="Ex: restaurants, hotels, cares, bars" required type="text">
+                                <input class="form-control" maxlength="255" name="keyword"
+                                    placeholder="Ex: restaurants, hotels, cares, bars" required type="text">
                             </div>
                         </div>
                         <div class="search-locations">
                             <div class="form-group mb-lg-0 form-location mb-3">
                                 <span>Where?</span>
-                                <input class="form-control" placeholder="Ex: colombo, kandy, galle, ratnapura" type="text">
+                                <input class="form-control" placeholder="Ex: colombo, kandy, galle, ratnapura"
+                                    type="text">
                             </div>
                         </div>
                         <div class="state-submit">
@@ -40,7 +44,9 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-10">
-                    <div class="owl-carousel mb-lg-0 mt-5" data-autoheight="false" data-items="6" data-md-items="4" data-nav-arrow="false" data-nav-dots="false" data-sm-items="3" data-space="10" data-xs-items="2" data-xx-items="1">
+                    <div class="owl-carousel mb-lg-0 mt-5" data-autoheight="false" data-items="6" data-md-items="4"
+                        data-nav-arrow="false" data-nav-dots="false" data-sm-items="3" data-space="10" data-xs-items="2"
+                        data-xx-items="1">
                         <a class="category-item-02" href="#">
                             <i class="flaticon-food-serving"></i>
                             <span class="category-title mb-0">Restaurant</span>
@@ -94,7 +100,8 @@
                             <img alt="place" class="img-fluid" src="{{ asset('images/place.jpg') }}">
                             <div class="listing-quick-box">
                                 <a class="category" href="#">Test Category</a>
-                                <a class="popup popup-single" data-bs-toggle="tooltip" data-placement="top" href="{{ asset('images/place.jpg') }}" title="Zoom">
+                                <a class="popup popup-single" data-bs-toggle="tooltip" data-placement="top"
+                                    href="{{ asset('images/place.jpg') }}" title="Zoom">
                                     <i class="fas fa-search-plus"></i>
                                 </a>
                             </div>
@@ -107,197 +114,8 @@
                                     </h6>
                                     <span class="listing-price">LKR 1,000/hr</span>
                                 </div>
-                                <p class="mb-3">Remind yourself you have nowhere to go except have already been at the bottom.</p>
-                                <div class="listing-rating-call">
-                                    <a class="listing-rating" href="#">
-                                        <i class="fas fa-user me-2"></i> Test Vendor
-                                    </a>
-                                    <a class="listing-call" href="tel:0000000000">
-                                        <i class="fas fa-phone me-2"></i> 000 0000 000
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="listing-bottom">
-                                <a class="listing-loaction" href="#">
-                                    <i class="fas fa-map-marker-alt"></i> Test City
-                                </a>
-                                <span class="listing-open">Available</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <div class="listing-item">
-                        <div class="listing-image bg-overlay-half-top">
-                            <img alt="place" class="img-fluid" src="{{ asset('images/place.jpg') }}">
-                            <div class="listing-quick-box">
-                                <a class="category" href="#">Test Category</a>
-                                <a class="popup popup-single" data-bs-toggle="tooltip" data-placement="top" href="{{ asset('images/place.jpg') }}" title="Zoom">
-                                    <i class="fas fa-search-plus"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="listing-details">
-                            <div class="listing-details-inner">
-                                <div class="listing-title mb-2">
-                                    <h6>
-                                        <a href="#">Test Place</a>
-                                    </h6>
-                                    <span class="listing-price">LKR 1,000/hr</span>
-                                </div>
-                                <p class="mb-3">Remind yourself you have nowhere to go except have already been at the bottom.</p>
-                                <div class="listing-rating-call">
-                                    <a class="listing-rating" href="#">
-                                        <i class="fas fa-user me-2"></i> Test Vendor
-                                    </a>
-                                    <a class="listing-call" href="tel:0000000000">
-                                        <i class="fas fa-phone me-2"></i> 000 0000 000
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="listing-bottom">
-                                <a class="listing-loaction" href="#">
-                                    <i class="fas fa-map-marker-alt"></i> Test City
-                                </a>
-                                <span class="listing-close">Unavailable</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <div class="listing-item">
-                        <div class="listing-image bg-overlay-half-top">
-                            <img alt="place" class="img-fluid" src="{{ asset('images/place.jpg') }}">
-                            <div class="listing-quick-box">
-                                <a class="category" href="#">Test Category</a>
-                                <a class="popup popup-single" data-bs-toggle="tooltip" data-placement="top" href="{{ asset('images/place.jpg') }}" title="Zoom">
-                                    <i class="fas fa-search-plus"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="listing-details">
-                            <div class="listing-details-inner">
-                                <div class="listing-title mb-2">
-                                    <h6>
-                                        <a href="#">Test Place</a>
-                                    </h6>
-                                    <span class="listing-price">LKR 1,000/hr</span>
-                                </div>
-                                <p class="mb-3">Remind yourself you have nowhere to go except have already been at the bottom.</p>
-                                <div class="listing-rating-call">
-                                    <a class="listing-rating" href="#">
-                                        <i class="fas fa-user me-2"></i> Test Vendor
-                                    </a>
-                                    <a class="listing-call" href="tel:0000000000">
-                                        <i class="fas fa-phone me-2"></i> 000 0000 000
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="listing-bottom">
-                                <a class="listing-loaction" href="#">
-                                    <i class="fas fa-map-marker-alt"></i> Test City
-                                </a>
-                                <span class="listing-open">Available</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <div class="listing-item">
-                        <div class="listing-image bg-overlay-half-top">
-                            <img alt="place" class="img-fluid" src="{{ asset('images/place.jpg') }}">
-                            <div class="listing-quick-box">
-                                <a class="category" href="#">Test Category</a>
-                                <a class="popup popup-single" data-bs-toggle="tooltip" data-placement="top" href="{{ asset('images/place.jpg') }}" title="Zoom">
-                                    <i class="fas fa-search-plus"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="listing-details">
-                            <div class="listing-details-inner">
-                                <div class="listing-title mb-2">
-                                    <h6>
-                                        <a href="#">Test Place</a>
-                                    </h6>
-                                    <span class="listing-price">LKR 1,000/hr</span>
-                                </div>
-                                <p class="mb-3">Remind yourself you have nowhere to go except have already been at the bottom.</p>
-                                <div class="listing-rating-call">
-                                    <a class="listing-rating" href="#">
-                                        <i class="fas fa-user me-2"></i> Test Vendor
-                                    </a>
-                                    <a class="listing-call" href="tel:0000000000">
-                                        <i class="fas fa-phone me-2"></i> 000 0000 000
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="listing-bottom">
-                                <a class="listing-loaction" href="#">
-                                    <i class="fas fa-map-marker-alt"></i> Test City
-                                </a>
-                                <span class="listing-open">Available</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <div class="listing-item">
-                        <div class="listing-image bg-overlay-half-top">
-                            <img alt="place" class="img-fluid" src="{{ asset('images/place.jpg') }}">
-                            <div class="listing-quick-box">
-                                <a class="category" href="#">Test Category</a>
-                                <a class="popup popup-single" data-bs-toggle="tooltip" data-placement="top" href="{{ asset('images/place.jpg') }}" title="Zoom">
-                                    <i class="fas fa-search-plus"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="listing-details">
-                            <div class="listing-details-inner">
-                                <div class="listing-title mb-2">
-                                    <h6>
-                                        <a href="#">Test Place</a>
-                                    </h6>
-                                    <span class="listing-price">LKR 1,000/hr</span>
-                                </div>
-                                <p class="mb-3">Remind yourself you have nowhere to go except have already been at the bottom.</p>
-                                <div class="listing-rating-call">
-                                    <a class="listing-rating" href="#">
-                                        <i class="fas fa-user me-2"></i> Test Vendor
-                                    </a>
-                                    <a class="listing-call" href="tel:0000000000">
-                                        <i class="fas fa-phone me-2"></i> 000 0000 000
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="listing-bottom">
-                                <a class="listing-loaction" href="#">
-                                    <i class="fas fa-map-marker-alt"></i> Test City
-                                </a>
-                                <span class="listing-open">Available</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <div class="listing-item">
-                        <div class="listing-image bg-overlay-half-top">
-                            <img alt="place" class="img-fluid" src="{{ asset('images/place.jpg') }}">
-                            <div class="listing-quick-box">
-                                <a class="category" href="#">Test Category</a>
-                                <a class="popup popup-single" data-bs-toggle="tooltip" data-placement="top" href="{{ asset('images/place.jpg') }}" title="Zoom">
-                                    <i class="fas fa-search-plus"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="listing-details">
-                            <div class="listing-details-inner">
-                                <div class="listing-title mb-2">
-                                    <h6>
-                                        <a href="#">Test Place</a>
-                                    </h6>
-                                    <span class="listing-price">LKR 1,000/hr</span>
-                                </div>
-                                <p class="mb-3">Remind yourself you have nowhere to go except have already been at the bottom.</p>
+                                <p class="mb-3">Remind yourself you have nowhere to go except have already been at the
+                                    bottom.</p>
                                 <div class="listing-rating-call">
                                     <a class="listing-rating" href="#">
                                         <i class="fas fa-user me-2"></i> Test Vendor
@@ -339,7 +157,8 @@
                         </div>
                         <div class="feature-content">
                             <h5 class="feature-title">Choose What To Do</h5>
-                            <p>Let success motivate you. Find a picture of what epitomizes success to you and then pull it out when you are in need of motivation.</p>
+                            <p>Let success motivate you. Find a picture of what epitomizes success to you and then pull it
+                                out when you are in need of motivation.</p>
                         </div>
                     </div>
                 </div>
@@ -350,7 +169,8 @@
                         </div>
                         <div class="feature-content">
                             <h5 class="feature-title">Find What You Want</h5>
-                            <p>Do it today. Remind yourself of someone you know who died suddenly and the fact that there is no guarantee that tomorrow will come.</p>
+                            <p>Do it today. Remind yourself of someone you know who died suddenly and the fact that there is
+                                no guarantee that tomorrow will come.</p>
                         </div>
                     </div>
                 </div>
@@ -361,7 +181,8 @@
                         </div>
                         <div class="feature-content">
                             <h5 class="feature-title">Amazing Places</h5>
-                            <p class="mb-0">Make a list of your achievements toward your long-term goal and remind yourself that intentions don't count intentions don't count, only action's.</p>
+                            <p class="mb-0">Make a list of your achievements toward your long-term goal and remind
+                                yourself that intentions don't count intentions don't count, only action's.</p>
                         </div>
                     </div>
                 </div>
