@@ -24,6 +24,7 @@
     <link href="{{ asset('css/flatpickr.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('css/laravel-alert.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/calendar.css') }}" rel="stylesheet">
 </head>
 
 <body>
@@ -63,6 +64,7 @@
             time_24hr: true,
         });
     </script>
+    @stack('scripts')
 </body>
 
 </html>

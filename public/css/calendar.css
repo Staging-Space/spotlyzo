@@ -1,0 +1,25 @@
+.compact-table {
+    width: auto;
+    table-layout: auto;
+    border-collapse: collapse;
+}
+
+.compact-table th,
+.compact-table td {
+    padding: 0.4em;
+    border: none;
+    font-weight: 600;
+}
+
+.compact-table th {
+    background-color: #343a40;
+    color: white;
+}
+
+.compact-thead-dark th {
+    background-color: #343a40;
+}
+
+.bg-book{
+    background-color: #f43f5e;
+}
