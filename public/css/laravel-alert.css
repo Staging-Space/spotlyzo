@@ -1,0 +1,35 @@
+.laravel-alert {
+    background-color: #f8fafc;
+    box-shadow: 0px 0px 5px 1px rgba(2, 6, 23, 0.25);
+    left: 50%;
+    max-width: 80vw;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    z-index: 9999999999;
+}
+.laravel-alert .laravel-alert-message {
+    color: #020617;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.laravel-alert .laravel-alert-action {
+    text-align: right;
+}
+.laravel-alert .laravel-alert-action .laravel-alert-action-link {
+    color: #f8fafc;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 8px 20px;
+    text-decoration: none;
+}
+.laravel-alert.laravel-alert-danger .laravel-alert-action .laravel-alert-action-link {
+    background-color: #ef4444;
+}
+.laravel-alert.laravel-alert-success .laravel-alert-action .laravel-alert-action-link {
+    background-color: #22c55e;
+}

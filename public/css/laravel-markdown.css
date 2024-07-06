@@ -1,0 +1,34 @@
+.laravel-markdown p:not(:last-child) {
+    margin-bottom: 20px;
+}
+.laravel-markdown p:last-child {
+    margin-bottom: 0;
+}
+.laravel-markdown h1,
+.laravel-markdown h2,
+.laravel-markdown h3,
+.laravel-markdown h4,
+.laravel-markdown h5,
+.laravel-markdown h6 {
+    margin-bottom: 20px;
+}
+.laravel-markdown ul {
+    list-style: disc;
+    margin-left: 15px;
+}
+.laravel-markdown ul:not(:last-child) {
+    margin-bottom: 20px;
+}
+.laravel-markdown ul:last-child {
+    margin-bottom: 0;
+}
+.laravel-markdown ul li:not(:last-child) {
+    margin-bottom: 5px;
+}
+.laravel-markdown ul li:last-child {
+    margin-bottom: 0;
+}
+.laravel-markdown img {
+    height: auto;
+    max-width: 100%;
+}

@@ -1,0 +1,45 @@
+.laravel-cta {
+    border-radius: 50%;
+    bottom: 20px;
+    left: 20px;
+    position: fixed;
+    z-index: 9999999999;
+}
+.laravel-cta .laravel-cta-button {
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 1px rgba(2, 6, 23, 0.25);
+    color: #f8fafc;
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    text-decoration: none;
+    width: 60px;
+}
+.laravel-cta .laravel-cta-button:not(:last-child) {
+    margin-bottom: 5px;
+}
+.laravel-cta .laravel-cta-button svg {
+    fill: #f8fafc;
+}
+.laravel-cta .laravel-cta-button.laravel-cta-button-email {
+    background-color: #3b82f6;
+}
+.laravel-cta .laravel-cta-button.laravel-cta-button-email svg {
+    height: 30px;
+    width: 30px;
+}
+.laravel-cta .laravel-cta-button.laravel-cta-button-phone {
+    background-color: #ef4444;
+}
+.laravel-cta .laravel-cta-button.laravel-cta-button-phone svg {
+    height: 30px;
+    width: 30px;
+}
+.laravel-cta .laravel-cta-button.laravel-cta-button-whatsapp {
+    background-color: #22c55e;
+}
+.laravel-cta .laravel-cta-button.laravel-cta-button-whatsapp svg {
+    height: 35px;
+    width: 35px;
+}
